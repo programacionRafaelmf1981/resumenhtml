@@ -1,0 +1,400 @@
+<!doctype html> <html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>practica html</title>
+	<style type="text/css">
+		
+		dd{color:#F0F706}
+		li p {color:#47F74B}
+		/*#idcuerpo{}*/
+			
+		/*table{background-color: #747474} 
+		 tablas las estoy haciendo algunas cosas con css en vez de html como por ejemplo la alineacion  del texto de laas celdas o el color de la tabla*/
+		td{background-color: #3F31F3;text-align: center}
+		b{color: #0BC3E9}
+		
+		
+	
+	</style>
+	
+	
+
+	
+	</head>
+	<body  bgcolor="#000000" text="#FFD762" link="#2F08F1" vlink="#068594" alink="#F4EC0E">
+		<h2><font color="#FF030B"><p align="center">PRACTICA HTML</p></font></h2>
+	   <a name="inicio"></a>
+	 
+		
+		input type="submit" name="enviar" 
+		<input type="button" name="abbajo" size="60"  ><br><br>
+		
+	   <a  href="#abajo">abajo</a>
+		
+	   <p align="left">este es a la izquierda</p>	
+	   <p align="center">este parrafao es centrado </p>
+	   <p align="right">este parrafo es en la derecha</p>
+		<br>
+		<br>
+		
+		<p>las listas pueden ser 3 tipos(type="ul,ol,dl") cada elemento se abre sy se cierra con (li)</p>
+		
+	<ol type="1">
+		<li><p>lista desordenada,ul</p>
+			<ul type="square">
+				
+		    <li>circle,que son circulos</li>
+	    	<li>disc, que son puntos</li>
+			<li>square,que son cuadrados</li>
+		
+		</ul>
+			
+		</li>
+		<br>
+		
+	   <li> <p>lista ordenada,ol</p>
+		<ol type="I" start="5">
+			
+			<p>tenemos que recorfar que si queremos empezar por un nº o letra en concreto ,deberemos indicarselo en la etiqueta de la lista con la etiqueta ,start="numero desde donde queremos empezar la lista"</p>
+			<br>
+		    <li>1,numeros</li>
+	    	<li>I,nº romanos</li>
+			<li>A,letras</li>
+		
+		</ol>
+			
+		</li>
+		<br>
+		<li><p>lista de definicion,dl y sus terminos(dt) y definicion (dd)</p>
+		<dl>
+			<dt>este seria el definicion termn</dt>
+			<dd>y este seria el definicion de definicion</dd>
+			<dt>ponemos otro</dt>
+			<dd>para poder hacer una lista</dd>
+		
+		
+		</dl>
+			
+		</li>
+	</ol>
+		
+		
+		<p align="center">ENLACES</p>
+		<br>
+		<p>los enlaces se introducen en la etiqueta "a" acompañada del atributo "href" (a href="direccion web ")</p>
+		
+		<a href="https://ghi.es" > <p align="center">link para GHI.ES </p> </a>
+	    <br>
+		<p>los enlaces internos son enlaces que van hacia una parte de una misma pagina,como ejemplo las tecclas de ir abajo o ir al inicio,la etiqueta clave para el envio es href y para el ancla # la almoadilla con el nombre</p>
+		<p>mientras que para el ancla las etiquetas clave es; a name ="nombre que queramos";sin almoadilla</p>
+		<p>su sintaxis seria:  el que envia ; a href="#nombre que queramos" y luego cierre de a</p>
+		<p>y para el ancla que es el destino su sintaxis seria :  a name="nombre que queramos"</p>
+		
+		<a href="#inicio">inicio</a>
+		
+		<p>tenemos tambien los enlaces locales ,que son enlaces de otras paginas dentro de un mismo sitio web,seria como en las anteriores la etiqueta( a href ="y la ruta del archivo")texto de donde va y cierre de a</p>
+		<a href="pguiada1/banner.jpg">foto pildoras informaticas</a>
+		<p>estan tambien los enlaces exeternos hacia otros sitios web,estos son iguales la etiqueta a href="http:// es immportante poner el http:// para indicarle que es un sitio web externo"</p>
+		<br>
+		<p>Enlaces de mail;estos enlaces son para dirigirnos al correo electronico,su sintaxis es etiqueta a href="mailto:(correo)" teto y cierre etiqueta </p>
+		<p>para ademas pnerle el asunto hay que añadir despues del correo   ?subject=   y el asunto para gestionarlo mejor </p>
+		<p>tambien podemos poner para que nos envie copia a otro correo añadiendo despues del asunto    &cc= correo donde quiero enviar la copia    texto que sale y cierre etiqueta a  </p>
+		<p style="color:#7174FF">  ejemplo: mailto:rafaelmf1981@gmail.com?subject=practica-html &cc=seguridadrafaelmf1981@gmail.com</p>
+		
+		<a href="mailto:rafaelmf1981@gmail.com?subject=practica-html &cc=seguridadrafaelmf1981@gmail.com">email</a>
+		
+		
+		<p>tenemos tambien el enlace para descarga de archivos la sintaxis es la misma etiqueta a href="archivo.zip" si no funciona le pondremos la ruta que tiene que seguir,mirar si tiene que estar en la carpeta raiz del proyècto creo que si</p>
+		
+		<a href="practicasinguia/Photos (2).zip" >archivo fotos zip</a>
+		
+		<p align="center">IMAGENES</p>
+		<p>la etiqueta es img src (imagen source) quedando la sintaxis img src="ruta del archivo .jpg"</p>
+		<p>pudiendo cambiarla los atributos introduciendolos en la etiqueta ; ancho(width) o  largo(height) en pixeles px  alt(anotaciones)</p>
+		
+		<img src="practicasinguia/imagenescss/pexels1.jpg" width="500px" height="250px" alt="imagen ghi" >
+		
+		
+		<p>con todo esto ni que decir tiene que podemos crear enlaces con imagens combinando ambas</p>
+		<p>la sintaxis seria  a href="http://www.ghi.es" img src ruta de foto  cierro etiqueta a</p>
+		
+		<a href="https://www.ghi.es"><img src="practicasinguia/imagenescss/pexels1.jpg" width="400px" height="200px" alt="pagina ghi"></a>	
+	
+		<p align="center">TABLAS</p>
+		
+		
+		<table cellspacing="3px" cellpadding="4px"  bgcolor="#ECEB0D" bordercolor="#0CFC11" style="margin: 70px" width="400px" height="250px">
+		   <tr>
+		<td >fila uno celda1</td>	
+			<td>fila 1 celda 2</td>
+			  <td>fila 1 celda3</td>
+		   </tr>
+		
+			
+		    <tr>
+			 <td>fila 2 celda 1</td>
+			<td>fila2 celda2</td>
+			<td>fila 2 celda 3</td>
+			
+			</tr>
+			
+			<tr>
+			<td>fila3 celda1</td>
+			<td>fila3 celda2</td>
+			<td>fila3 celda3</td>
+			
+			</tr>
+		
+		
+		
+		
+		</table>
+		
+		
+		<p>las tablas se componen de 3 etiquetas la tabla:table, la fila:tr, y la celda:td</p>
+		<p>los atributos mas usados son: bgcolor para el color de las celdas, background para el color de la tabla,bg color para el color de la tabla,font color para el color del tecto,border para el borde de la linea de la tabla,margin para la distancia del contenedor a lo que le rodea,cellspadding define el espaci entre los bordes de la celda y la tabl,cellspacing define el espacio entre los bordes,width el ancho ,height el alto</p>
+		
+		<h5>(las lineas de las celdas no son lineas en si ,sino la diferencia de color entre el color de la tabla y las celdas)</h5>
+		<br>
+		<br>
+		
+		
+		
+		<p align="center">FORMULARIOS</p>
+		<br>
+		<p> los formlarios se representan con la etiqueta form,acompañada de algunos atributos como pueden ser ,action que define el tipo de accion por ejemplo enviar . method este atributo que especifica la forma casi siempre es post (method="post")  . enctype este se utiliza para indicar el tipo de forma en que viajara la informacion casi siempre es text/plain </p>
+		<p>quedaria mas o menos asi   .<i>  form   action="mailto:corre@ejemplo.com?subject=ejemplo fomulario&cc=correo@de copia"  method="post"  enctype="text/plain"</i> </p>
+		
+		<p align="center">formularios etiqueta <b>INPUT</b></p>
+		
+		<p>la etiqueta INPUT devemos de aacompañarla con la etiqueta name="nombre" y la etiqueta 
+			type= ("text" o "password") ;recordar que son cajas que se utiliza para textos cortos</p>
+		
+	     <p> ejemplo:  input type="text" name="nombre "</p>
+		
+		<p align="center"><input  type="text" name="nombre" value="texto"></p>
+		<p>ademas de esos dos atributos basicos tambien se le puede acompañar con los siguientes</p>
+		
+		
+	<dl>
+		<dt>size</dt>
+		<dd>define el tamaño de la caja de texto </dd>
+		<dt>maxlength</dt>
+		<dd>indica el tamaño maximo el numero de caracteres de caracteres</dd>
+		<dt>value</dt>
+		<dd>genera un texto en el input para orientar</dd>
+		
+		
+	</dl>
+		
+		
+		<p align="center" >formulario etiqueta <b>TEXTAREA</b> </p>
+	
+    	<br>
+		<p>la etiqueta TEXTAREA es para campos de texto mas amplios que  la de INPUT ,la debemos de acompañar siempre de su cierre y ademas de las siguientes etiquetas:</p>
+	<dl>
+	
+		<dt>rows</dt>
+		<dd>define ell numero de lineas del camo de texto</dd>
+		<dt>cols</dt>
+		<dd>define el numero de columnas del campo de texto</dd>
+		
+		
+    </dl>
+		
+		
+		
+    	<p>la sintaxis de la etiqueta seria:  textarea rows="10" cols="40"   texto aclaratorio /textarea </p>
+		<br>
+		
+		
+	<form align="center">
+		<textarea  cols="40" rows="20" >texto aclaratorio
+		
+		  
+		</textarea>
+		
+	</form>
+		
+		<p style="color:#F09E18"><i>recordar que tanto en INPUT como en TEXTAREA van dentro de la orquilla entre la etiqueta FORM  ... y su cierre</i></p>
+		
+		
+		<p align="center">formulario menu  etiquetas <b>SELECT Y OPTION</b></p>
+		
+		
+		
+		<p>estas dos etiquetas son para menu ,dando una cantidad de opciones </p>
+		<p>etiqueta SELECT: esta etiqueta debe ir acompañada de l atributo name="nombre", de su cierre viene acompañada en su orquilla de las opciones OPTION Y sus cierres</p>
+		<p>tambien le pueden acompañar los atributos SIZE: que le indica el numero de valores<br>MULTIPLE:permite la seleccion de mas de un elemento de la lista</p>
+		<p>la etiqueta OPTION puede ir acompañada del atributo selected="..."  :este atributo predispone por defecto la opcion que le pongo;<br>tambien ppuede acompañarlo el atributo value="...nº ":  el cual sirve para dar un valor normamente numerico para luego catalogarlos</p>
+		
+		<p> la sintaxis seria:  <br>  form <br> select name="nombre"<br> option.....  /option <br>/select<br>/form</p>
+		
+	<form align="center">
+		<select name="el nombe que quiera">
+			
+			<option>este menu </option>
+			<option>es</option>
+			<option>desplegable</option>
+			<option>aqui van las opciones</option>
+			
+			
+		</select>
+		
+		
+		
+		
+	</form>
+		
+		
+		<br>
+		<br>
+		<br>
+		<p align="center">formularios menu etiqueta <b>BOTONES DE RADIO <i>INPUT</i></b></p>
+		
+		<p>DE LISTA : en este se pone de TYPE =" RADIO"</p>
+		<p>en este caso la etiqueta INPUT hace para el menu y la vamos a acompañar necesariamente con el atributo TYPE que en vez de en TEXT lo vamos a indicar RADIO,quedando asi:<br>form<br>input name =".." type=<i>"radio"</i> opcion1 ,</p>
+		<p>al igual que en los menus anteriores en este se puede predisponer una selecion añadiendo ademas el atributo CHECKED  ala seleccion que yo quiera predisponer</p>
+		
+	<form>
+		
+		<input name="estacion" type="radio" value="1" checked> verano
+		<input name="estacion" type="radio" value="2"> invierno
+		
+	</form>
+		
+		<p align="center">formularios menu <b>CAJA DE VALIDACION</b></p>
+		<br>
+		<p>DE COKIES : en este se pone de TYPE ="CHECKBOX "</p>
+		<p>en este caso la etiqueta INPUT le cambiamos el TYPE por CHECKBOX la sintaxis es la misma que la anterios ,este tipo de elementos pueden ser activadas o desactivadas por el usuario con un simple cllick ,es la tipica opcion de acepto cookies</p>
+		
+	<form>
+		
+		<input type="checkbox" name="caja de validacion" value="1" >recibir notificaciones por correo
+		
+		
+	</form>
+		
+		<p align="center">formularios <b>BOTONES </b> </p>
+		<p>DE ENVIO : en este se pone de TYPE =" SUBMIT"</p>
+		
+		
+		<p> para el envio de dichos formularios es impresciindible  poner un boton de envio<br>esta la construimos de nuevo con la etiqueta INPUT cambiandole de nuevo el atributo TYPE poniendole submit,quedaria asi:<br> input type="submit" name="enviar"</p>
+		
+		<p align="center"><input type="submit" name="enviar" ></p>
+		
+		<br>
+		<br>
+		
+		<p>DE BORRADO : en este se pone de TYPE =" RESET"</p>
+		<br>
+		<br>
+		
+		
+		<p>BOTONES NORMALES:en este se pone de TYPE="BUTTON" </p>
+		
+		
+		<p align="center">formulario etiqueta<b> FIELDSET ,  LABEL</b></p>
+		
+		
+		<p>la etiqueta FIELDSET ,forma un recuadro alrededor de las etiquetas que tiene en su orquilla es mas diseño <br>sintaxis<br> <br>
+		fieldset <br>input type="text" name="..."
+		         <br>input type="text" name="..."</p>
+		
+		<fieldset>
+		elementos del formulario <input type="text" name="fielser">
+			<br>
+		otro elelmento <input type="text" name="leyen">
+		
+		
+		</fieldset>
+		
+		
+		<p>la etiqueta LABEL  ,sirve para poner texto al lado de los elementos del fotmulario y asi que puedan estar asociados el texto al elemento y si pinchas al texto es como si pincharas en la casilla eso es gracias al atributo FOR del label y el ID del input</p>
+		<p>la sintaxis seria:<br><br>  label  for="edad"  texto  /label    input type="text" name="edadd"   id="edad"</p> <p style ="color:#F09E18"> tenemos que destacar la asociacion entre el FOR del LABEL y el ID del INPUT</p>
+		
+		<label for="edad"> edad</label> <input type="text" name="edadd" id="edad"> 
+		<br>
+		
+		<p align="center">IFRAME</p>
+		<br>
+		
+		<p>los iframe son MUY UTILES pues lo que hacen es delimitar un marco en el cual se puede mostrar un video o una pagina web de terceros totalmente funcional<br>
+		la sitaxis de iframe seria <br>iframe <br> src="pagina fuente html..www." width=   height=    texto para cuando el navegador no conecte <br>   /iframe
+		
+		</p>
+		<p>habra que acompañarlo de estos otros atributos:<br> 
+			src: busqueda para indicar la direccion de la pagina web<br>
+		    width: ancho   height:alto   name:nombre que queramos para referirnos a el para poder llamarlo mas adelante.<br>id:para indicar el identificador del iframe y poder referirnos a el desde java script<br>
+			frameborder:para indicar si queremos borde o no ,en el que 0 seria no , y uno seria si<br>
+			scrolling:indical si se quiere que aparezcan barras de desplazamiento,normalmente y lo recomendable es ponerllo en auto  scrolling="auto"<br>
+			margin width/height: para definir los margenes de la imagen respecto al iframe<br>
+			margin:para especificar la alineacion<br>style y class:para definir el aspecto en css.
+		
+		</p>
+		
+		<p align="center"><iframe src="https://www.pccomponentes.com/samsung-galaxy-s20-12128gb-5g-cosmic-gray-libre-reacondicionado" id="iframehtml" name="ventanaiframe" width="400" height="200" scrolling="auto" >
+		
+		estamos trabajando para solucionarlo
+		
+		</iframe>
+		</p>
+		
+		<h1> final del curso</h1>
+		<p><i>espero habertelo puesto facil ,adelante</i></p>
+		
+		<a href="#inicio"> inicio</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a name="abajo"></a>
+		
+	
+	</body>
+	
+
+
+</html>
+
